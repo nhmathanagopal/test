@@ -55,15 +55,15 @@ def SLOrder(symbol,buy_sell,quantity):
         t_type_sl=kite.TRANSACTION_TYPE_BUY
         sl_price = b_price - (b_price * 1.25)/100
     print(sl_price)
-    kite.place_order(tradingsymbol=symbol,
-                      exchange=kite.EXCHANGE_NSE,
-                      transaction_type=t_type_sl,
-                      quantity=quantity,
-                      order_type=kite.ORDER_TYPE_SL,
-                      price=sl_price,
-                      trigger_price = sl_price,
-                      product=kite.PRODUCT_MIS,
-                      variety=kite.VARIETY_REGULAR)
+  # kite.place_order(tradingsymbol=symbol,
+  #                    exchange=kite.EXCHANGE_NSE,
+  #                    transaction_type=t_type_sl,
+  #                    quantity=quantity,
+  #                    order_type=kite.ORDER_TYPE_SL,
+  #                    price=sl_price,
+  #                    trigger_price = sl_price,
+  #                    product=kite.PRODUCT_MIS,
+  #                    variety=kite.VARIETY_REGULAR)
 
 
    
